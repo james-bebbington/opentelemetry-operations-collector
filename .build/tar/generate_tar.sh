@@ -1,5 +1,9 @@
 #!/bin/bash
+
+CONFIG_FILE=${CONFIG_FILE:-config-example.yaml}
+
 echo "Start building tarball distribution file"
+
 # check config file
 if [ ! -e "config/$CONFIG_FILE" ]
 then 
